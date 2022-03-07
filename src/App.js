@@ -1,18 +1,35 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AllEmployee from './components/HR/AllEmployee/AllEmployee';
+import Attendance from './components/HR/Attendance/Attendance';
 import './App.css';
 import Sidebar from './components/HR/Sidebar/Sidebar';
 import Topbar from './components/HR/Topbar/Topbar';
-import './App.css';
+import Salary from './components/HR/Salary/Salary';
+import LeaveApplication from './components/HR/LeaveApplication/LeaveApplication';
 function App () {
   return (
     <div>
-      <Topbar></Topbar>
-      <div className="container">
-        <Sidebar></Sidebar>
-        <div className="other">
-
+      <Router>
+        <Topbar></Topbar>
+        <div className="container">
+          <Sidebar></Sidebar>
+          <Switch>
+            <Route exact path="/allEmployee">
+              <AllEmployee></AllEmployee>
+            </Route>
+            <Route path="/attendance">
+              <Attendance></Attendance>
+            </Route>
+            <Route path="/salary">
+              <Salary></Salary>
+            </Route>
+            <Route path="/leaveApplication">
+              <LeaveApplication></LeaveApplication>
+            </Route>
+          </Switch>
         </div>
-      </div>
-    </div>
+      </Router>
+    </div >
   );
 }
 

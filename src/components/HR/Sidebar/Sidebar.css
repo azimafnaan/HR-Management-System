@@ -8,7 +8,7 @@
 }
 
 .sidebar-wrapper {
-  margin: 20px 0px 0px 20px;
+  padding: 20px 0px 0px 20px;
   color: #fff;
 }
 
@@ -23,7 +23,9 @@
   list-style-type: none;
   padding: 5px;
 }
-
+.sidebar-list a {
+  text-decoration: none;
+}
 .sidebar-list-item {
   padding: 15px;
   cursor: pointer;
@@ -31,6 +33,8 @@
   align-items: center;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
+  text-decoration: none;
+  color: white;
 }
 
 .sidebar-list-item.active,
