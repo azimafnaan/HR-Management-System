@@ -1,0 +1,41 @@
+.top-section {
+  background-color: #26abe1;
+  height: 80px;
+  box-shadow: 1px 5px 15px 5px rgba(184, 233, 255, 0.69);
+  position: sticky;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.menu-item {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item li {
+  padding: 10px 0px;
+  margin-right: 45px;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+.logout {
+  cursor: pointer;
+}
