@@ -3,7 +3,7 @@
   height: 720px;
   background-color: #153b5f;
   position: sticky;
-  box-shadow: -1px 1px 9px 5px rgba(69, 74, 255, 0.46);
+  /*box-shadow: -1px 1px 9px 5px rgba(69, 74, 255, 0.46);*/
   top: 50px;
 }
 

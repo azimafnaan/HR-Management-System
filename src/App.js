@@ -14,7 +14,10 @@ function App () {
         <div className="container">
           <Sidebar></Sidebar>
           <Switch>
-            <Route exact path="/allEmployee">
+            <Route exact path="/">
+              <AllEmployee></AllEmployee>
+            </Route>
+            <Route path="/allEmployee">
               <AllEmployee></AllEmployee>
             </Route>
             <Route path="/attendance">
