@@ -2,3 +2,12 @@
   flex: 4;
   margin: 10px 25px 90px 25px;
 }
+
+.employeeListEdit {
+  border: none;
+  padding: 5px 10px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}

@@ -6,6 +6,7 @@ import Sidebar from './components/HR/Sidebar/Sidebar';
 import Topbar from './components/HR/Topbar/Topbar';
 import Salary from './components/HR/Salary/Salary';
 import LeaveApplication from './components/HR/LeaveApplication/LeaveApplication';
+import Employee from './components/HR/Employee/Employee';
 function App () {
   return (
     <div>
@@ -20,6 +21,9 @@ function App () {
             <Route path="/allEmployee">
               <AllEmployee></AllEmployee>
             </Route>
+            <Route path="/employee/:employeeId">
+              <Employee></Employee>
+            </Route>
             <Route path="/attendance">
               <Attendance></Attendance>
             </Route>
@@ -29,6 +33,7 @@ function App () {
             <Route path="/leaveApplication">
               <LeaveApplication></LeaveApplication>
             </Route>
+
           </Switch>
         </div>
       </Router>
