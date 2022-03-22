@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './AllEmployee.css';
-import { rows } from '../../dummyData'
+// import { rows } from '../../dummyData'
 import { DataGrid } from '@mui/x-data-grid';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { Link } from 'react-router-dom';
 
+
 const AllEmployee = () => {
-    const [data, setData] = useState(rows);
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch("fakedb.json")
+            .then(res => res.json())
+            .then(data => setData(data))
+    }, [])
 
     const handleDelete = (id) => {
         setData(data.filter((item) => item.id !== id));
@@ -55,6 +62,7 @@ const AllEmployee = () => {
     return (
         <div className="allEmployee">
             <h3>Employee Details</h3>
+
             <DataGrid
                 rows={data}
                 columns={columns}
@@ -63,8 +71,9 @@ const AllEmployee = () => {
                 rowsPerPageOptions={[5]}
 
             />
-
         </div>
+
+
     );
 };
 
