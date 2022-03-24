@@ -1,3 +1,23 @@
 .employee {
   flex: 4;
 }
+
+.employeeEditForm {
+  padding: 20px 0px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.employeeEditForm input {
+  width: 60%;
+  padding: 10px;
+}
+
+.submit-btn {
+  width: 80px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: green;
+  color: #fff;
+  border: none;
+}

@@ -2,7 +2,6 @@
   background-color: #26abe1;
   height: 80px;
   box-shadow: 1px 5px 15px 5px rgba(184, 233, 255, 0.69);
-  position: sticky;
 }
 .top-bar {
   display: flex;

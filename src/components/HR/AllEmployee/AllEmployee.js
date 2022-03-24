@@ -36,6 +36,11 @@ const AllEmployee = () => {
             headerName: 'Age',
             width: 90,
         },
+        {
+            field: 'gender',
+            headerName: 'Gender',
+            width: 90,
+        },
 
         {
             field: 'action',
@@ -61,12 +66,16 @@ const AllEmployee = () => {
 
     return (
         <div className="allEmployee">
-            <h3>Employee Details</h3>
+
+            <div className="employee-list-title">
+                <h3>Employee Details</h3>
+                <button className="btn-addEmployee">Add New Employee</button>
+            </div>
 
             <DataGrid
                 rows={data}
                 columns={columns}
-                pageSize={9}
+                pageSize={10}
                 disableSelectionOnClick
                 rowsPerPageOptions={[5]}
 
