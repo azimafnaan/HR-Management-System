@@ -7,6 +7,7 @@ import Topbar from './components/HR/Topbar/Topbar';
 import Salary from './components/HR/Salary/Salary';
 import LeaveApplication from './components/HR/LeaveApplication/LeaveApplication';
 import Employee from './components/HR/Employee/Employee';
+import AddNewEmployee from './components/HR/AddNewEmployee/AddNewEmployee';
 function App () {
   return (
     <div>
@@ -23,6 +24,9 @@ function App () {
             </Route>
             <Route path="/employee/:employeeId">
               <Employee></Employee>
+            </Route>
+            <Route path="/addNewEmployee">
+              <AddNewEmployee></AddNewEmployee>
             </Route>
             <Route path="/attendance">
               <Attendance></Attendance>

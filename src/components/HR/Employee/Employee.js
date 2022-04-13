@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Employee.css';
 import { useParams } from 'react-router-dom';
 import { useForm } from "react-hook-form";
+// import { Link } from 'react-router-dom';
+
 
 const Employee = () => {
     let { employeeId } = useParams();
@@ -31,7 +33,9 @@ const Employee = () => {
                 <input defaultValue={myEmployee?.age} {...register("age")} placeholder="Age" />
                 <input defaultValue={myEmployee?.gender} {...register("gender")} placeholder="Gender" />
 
+
                 <input type="submit" className="submit-btn" />
+
             </form>
         </div>
     );

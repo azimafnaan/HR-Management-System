@@ -69,7 +69,9 @@ const AllEmployee = () => {
 
             <div className="employee-list-title">
                 <h3>Employee Details</h3>
-                <button className="btn-addEmployee">Add New Employee</button>
+                <Link to="/addNewEmployee">
+                    <button className="btn-addEmployee">Add New Employee</button>
+                </Link>
             </div>
 
             <DataGrid
